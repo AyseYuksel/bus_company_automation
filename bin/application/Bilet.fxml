@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="bilet_table" minHeight="500.0" minWidth="500.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutY="6.0" prefHeight="34.0" prefWidth="503.0" style="-fx-alignment: center; -fx-background-color: #663399; -fx-font-size: 20; -fx-font-family: sans-serif;" text="Bilet Bilgi Formu" />
+      <TableView fx:id="bilet_table" layoutY="40.0" prefHeight="200.0" prefWidth="503.0">
+        <columns>
+          <TableColumn fx:id="bilet_id" prefWidth="75.0" text="Bilet ID" />
+            <TableColumn fx:id="koltukno" prefWidth="100.0" text="Koltuk Numarası" />
+          <TableColumn fx:id="kalkisyeri" prefWidth="75.0" text="Kalkış Yeri" />
+            <TableColumn fx:id="varisyeri" prefWidth="75.0" text="Varış Yeri" />
+            <TableColumn fx:id="kalkisgunu" prefWidth="104.0" text="Kalkış Günü" />
+            <TableColumn fx:id="kalkissaati" prefWidth="73.0" text="Kalkış Saati" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="kalkisyeri_combo" layoutX="84.0" layoutY="259.0" prefWidth="150.0" promptText="Kalkış Yeri" />
+      <ComboBox fx:id="varisyeri_combo" layoutX="271.0" layoutY="259.0" prefWidth="150.0" promptText="Varış Yeri" />
+      <Spinner fx:id="kalkissaati_spinner" layoutX="84.0" layoutY="323.0" />
+      <Label fx:id="kalkissaati_label" layoutX="14.0" layoutY="327.0" text="Kalkış saati" />
+      <DatePicker fx:id="kalkisgunu_datepicker" layoutX="294.0" layoutY="323.0" promptText="Kalkış Günü" />
+      <Label fx:id="kalkisgunu_label" layoutX="402.0" layoutY="296.0" prefHeight="17.0" prefWidth="75.0" />
+      <Button fx:id="biletekle_buton" layoutX="63.0" layoutY="461.0" mnemonicParsing="false" onAction="#biletekle_buton_click" prefHeight="25.0" prefWidth="96.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Bilet Oluştur" />
+      <Button fx:id="biletguncelle_buton" layoutX="196.0" layoutY="461.0" mnemonicParsing="false" onAction="#biletguncelle_buton_click" prefHeight="25.0" prefWidth="112.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Bilet Güncelle" />
+      <Button fx:id="biletsil_buton" layoutX="346.0" layoutY="461.0" mnemonicParsing="false" onAction="#biletsil_buton_click" prefHeight="25.0" prefWidth="112.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Bilet Sil" />
+      <Slider fx:id="koltukno_slider" blockIncrement="1.0" layoutX="35.0" layoutY="393.0" majorTickUnit="1.0" max="20.0" min="1.0" minorTickCount="1" prefHeight="14.0" prefWidth="454.0" showTickLabels="true" showTickMarks="true" />
+      <Label fx:id="koltukno_label" layoutX="111.0" layoutY="369.0" text="Koltuk Numarası Seçimi : " />
+      <Label fx:id="koltukno_label" layoutX="262.0" layoutY="369.0" />
+   </children>
+</AnchorPane>

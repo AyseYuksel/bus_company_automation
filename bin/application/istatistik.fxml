@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="500.0" minWidth="500.0" prefHeight="523.0" prefWidth="729.0" style="-fx-background-color: #5F9EA0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BarChart fx:id="satis_bar" layoutX="20.0" layoutY="85.0" prefHeight="277.0" prefWidth="316.0" style="-fx-background-color: #D2691E; -fx-alternative-column-fill-visible: #5F9EA0;" title="Şirketin Aylara Göre Çalışan-Satış Grafiği">
+        <xAxis>
+          <CategoryAxis fx:id="aylar_bar" label="Aylar" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="calisansatis_bar" label="Satış Miktarı" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="kalkis_pie" layoutX="382.0" layoutY="22.0" prefHeight="218.0" prefWidth="333.0" style="-fx-background-color: #F0E68C;" title="En Çok Kalkış Yapılan Yer" />
+      <PieChart fx:id="varis_pie" layoutX="391.0" layoutY="291.0" prefHeight="205.0" prefWidth="316.0" style="-fx-background-color: #F0E68C;" title="En Çok Varış Yapılan Yer" />
+   </children>
+</AnchorPane>

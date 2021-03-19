@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane minHeight="500.0" minWidth="500.0" style="-fx-background-color: #5F9EA0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <Label prefHeight="45.0" prefWidth="500.0" style="-fx-alignment: center; -fx-font-size: 22; -fx-background-color: #663399; -fx-font-family: sans-serif;" text="Müşteri Bilgi Formu" />
+      <TableView fx:id="uye_table" layoutY="45.0" prefHeight="200.0" prefWidth="500.0" style="-fx-border-style: solid;">
+        <columns>
+          <TableColumn fx:id="uyeid" prefWidth="75.0" text="Üye ID" />
+          <TableColumn fx:id="uyeismi" prefWidth="75.0" text="Üye İsmi" />
+            <TableColumn fx:id="uyesoyadi" prefWidth="75.0" text="Üye Soyadı" />
+            <TableColumn fx:id="uyeyasi" prefWidth="75.0" text="Üye Yaşı" />
+            <TableColumn fx:id="uyecinsiyet" prefWidth="73.0" text="Cinsiyet" />
+            <TableColumn fx:id="bilet_id" prefWidth="56.0" text="Bilet ID" />
+            <TableColumn fx:id="calisan_id" prefWidth="75.0" text="Çalışan ID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt_uyeismi" layoutY="245.0" prefHeight="45.0" prefWidth="500.0" promptText="Üye İsim Girişi" />
+      <TextField fx:id="txt_uyesoyismi" layoutY="290.0" prefHeight="45.0" prefWidth="500.0" promptText="Üye Soyisim Girişi" />
+      <RadioButton fx:id="kiz_radio" layoutX="218.0" layoutY="422.0" mnemonicParsing="false" text="Kız" />
+      <RadioButton fx:id="erkek_radio" layoutX="157.0" layoutY="422.0" mnemonicParsing="false" text="Erkek" />
+      <Label layoutX="14.0" layoutY="422.0" text="Cinsiyet Seçimi Yapınız" />
+      <Slider fx:id="uyeyasi_slider" blockIncrement="1.0" layoutX="18.0" layoutY="360.0" majorTickUnit="1.0" max="70.0" min="13.0" minorTickCount="5" prefHeight="53.0" prefWidth="473.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="14.0" layoutY="343.0" text="Yaş Seçimi Yapınız" />
+      <Button fx:id="uyeekle_buton" layoutX="30.0" layoutY="449.0" mnemonicParsing="false" onAction="#uyeekle_buton_click" prefHeight="25.0" prefWidth="115.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Üye Ekle" />
+      <Button fx:id="uyeguncelle_buton" layoutX="190.0" layoutY="449.0" mnemonicParsing="false" onAction="#uyeguncelle_buton_click" prefHeight="25.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Seçili Üyeyi Güncelle" />
+      <Button fx:id="uyesil_buton" layoutX="356.0" layoutY="449.0" mnemonicParsing="false" onAction="#uyesil_buton_click" prefHeight="25.0" prefWidth="130.0" style="-fx-background-radius: 25; -fx-background-color: #F0E68C;" text="Seçili Üyeyi Sil" />
+      <Label fx:id="uyeyasi_label" layoutX="143.0" layoutY="343.0" />
+   </children>
+</AnchorPane>
